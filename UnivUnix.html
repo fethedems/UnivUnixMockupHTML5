@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Home Template for Bootstrap 3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/UnivUnix.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">UnivUnix</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Linux</a></li>
+            <li><a href="#">Móvil</a></li>
+            <li><a href="#">Otros</a></li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li>
+              <a data-toggle="modal" href="#social">Síguenos</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+  <!-- Modal -->
+  <div class="modal" id="social">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Síguenos en las Redes Sociales</h3>
+        </div>
+        <div class="modal-body">
+          Esto es una prueba de diálogo modal en Bootstrap 3.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">
+                    <i class="glyphicon glyphicon-remove"></i>
+                    Cerrar
+          </button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-9">
+        
+          <!-- blog entry -->
+<div class="container">
+        <div class="col-sm-6 separator">
+          <div class="thumbnail thumb-hover">
+            <img src="http://placehold.it/700x440" alt="">
+            <div class="caption">
+              <h3><a href="">Torvalds fue requerido por la NSA para instalar un backdoor en Linux</a></h3>
+              <p>cat1 > cat2</p>
+            </div>
+            <footer>
+                <div class="text-center">
+                  <!-- Botón que informa de la fecha -->
+                  <button type="button" class="btn btn-sm btn-default">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                    <time class="updated" datetime="">14/01/2013</time>
+                  </button>
+                  <!-- Comentarios y compartir -->
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-default" href="">
+                      <i class="glyphicon glyphicon-comment"></i>
+                    </a>
+                    <a class="btn btn-sm btn-default" href="#response">125</a>
+                    <a href="#compartir" class="btn btn-sm btn-default" data-toggle="modal"><i class="glyphicon glyphicon-retweet"></i>Compartir</a>
+                  </div>
+                </div>              
+            </footer>
+          </div>
+        </div>
+
+  <!-- Modal -->
+  <div class="modal" id="compartir" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          Esto es una prueba de diálogo modal en Bootstrap 3.
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+          <div class="col-sm-6 separator">
+          <div class="thumbnail thumb-hover">
+            <img src="http://placehold.it/700x440" alt="">
+            <div class="caption">
+              <h3><a href="">Torvalds fue requerido por la NSA para instalar un backdoor en Linux</a></h3>
+              <p>cat1 > cat2</p>
+            </div>
+            <footer>
+                <div class="text-center">
+                  <!-- Botón que informa de la fecha -->
+                  <button type="button" class="btn btn-sm btn-default">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                    <time class="updated" datetime="">14/01/2013</time>
+                  </button>
+                  <!-- Comentarios y compartir -->
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-default" href="">
+                      <i class="glyphicon glyphicon-comment"></i>
+                    </a>
+                    <a class="btn btn-sm btn-default" href="#response">125</a>
+                    <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                      <i class="glyphicon glyphicon-retweet"></i>
+                      Compartir
+                    </button>                    
+                    <div class="dropdown-menu dropdown-padded pull-right">
+                    <a class="btn-tt" href="" target="_blank" title="Compártelo en Twitter">
+                      Twitter
+                    </a>
+                    <a class="btn-fb" href="" target="_blank" title="Recomiéndalo en Facebook">
+                      Facebook
+                    </a>
+                    <a class="btn-gp" href="" target="_blank" title="Compártelo en Google Plus">
+                      G Plus
+                    </a>
+                    <a class="btn-lin" href="" target="_blank" title="Divulga el artículo en LinkedIn">
+                      LinkedIn
+                    </a>
+                  </div>   
+                  </div>
+                </div>              
+            </footer>
+          </div>
+        </div>
+
+        <div class="col-sm-6 separator">
+          <div class="thumbnail thumb-hover">
+            <img src="http://placehold.it/700x440" alt="">
+            <div class="caption">
+              <h3><a href="">Torvalds fue requerido por la NSA para instalar un backdoor en Linux</a></h3>
+              <p>cat1 > cat2</p>
+            </div>
+            <footer>
+                <div class="text-center">
+                  <!-- Botón que informa de la fecha -->
+                  <button type="button" class="btn btn-sm btn-default">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                    <time class="updated" datetime="">14/01/2013</time>
+                  </button>
+                  <!-- Comentarios y compartir -->
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-default" href="">
+                      <i class="glyphicon glyphicon-comment"></i>
+                    </a>
+                    <a class="btn btn-sm btn-default" href="#response">125</a>
+                    <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                      <i class="glyphicon glyphicon-retweet"></i>
+                      Compartir
+                    </button>
+
+                                      <div class="dropdown-menu dropdown-padded pull-right">
+                    <a class="btn-tt" href="" target="_blank" title="Compártelo en Twitter">
+                      Twitter
+                    </a>
+                    <a class="btn-fb" href="" target="_blank" title="Recomiéndalo en Facebook">
+                      Facebook
+                    </a>
+                    <a class="btn-gp" href="" target="_blank" title="Compártelo en Google Plus">
+                      G Plus
+                    </a>
+                    <a class="btn-lin" href="" target="_blank" title="Divulga el artículo en LinkedIn">
+                      LinkedIn
+                    </a>
+                  </div>
+                  </div>
+                </div>              
+            </footer>
+          </div>
+
+        </div>
+        
+        </div>
+          <!-- pager -->
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-12">
+            <ul class="pager">
+              <li class="previous"><a href="#">&larr; Antiguo</a></li>
+              <li class="next"><a href="#">Nuevo &rarr;</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+          
+        </div>
+        
+        <aside id="sidebar" class="col-lg-3" role="complementary">
+          <section class="widget" id="pages">
+            <div class="container">
+              <div class="widget-title">
+                <h3>Acerca de:</h3>
+              </div>
+              <div class="widget-content">
+                <ul>
+                  <li>
+                    <a href="/lssi" property="dc:title">
+                      LSSI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="widget" id="authors">
+            <div class="container">
+              <div class="widget-title">
+                <h3>Acerca de:</h3>
+              </div>
+              <div class="widget-content">
+                <ul>
+                  <li>
+                    <a href="/lssi" property="dc:title">
+                      LSSI
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>      
+          </section>
+        </aside>      
+      <hr>      
+    </div><!-- /.container -->
+    </div>
+<div class="container">
+        <footer>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <p>Copyright &copy; Company 2013</p>
+          </div>
+        </div>
+      </footer>
+</div>
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
