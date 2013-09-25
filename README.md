@@ -8,5 +8,5 @@ TODO List
 1.  Footer design.
 2.  Blog-page design.
 3.  Blog-post design.
-4.  Social Links.
+4.  Social Links (post and navbar).
 5.  CSS-Sprites update.
