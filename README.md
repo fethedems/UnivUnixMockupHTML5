@@ -10,3 +10,5 @@ TODO List
 3.  Blog-post design.
 4.  Social Links (post and navbar).
 5.  CSS-Sprites update.
+
+You can see a preview and follow our progress [here](http://htmlpreview.github.io/?https://github.com/fethedems/UnivUnixMockupHTML5/blob/master/UnivUnix.html).
