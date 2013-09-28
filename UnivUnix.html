@@ -14,7 +14,7 @@
   </head>
   
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -47,7 +47,7 @@
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container -->
-    </nav>
+    </header>
     <!-- Modal -->
     <div class="modal" id="social">
       <div class="modal-dialog">
@@ -61,25 +61,23 @@
               <i class="glyphicon glyphicon-remove"></i>Cerrar</button>
           </div>
         </div>
-        <!-- /.modal-content -->
       </div>
-      <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-    <div class="container">
+    <section id="content" class="container">
       <div class="row">
-        <div class="col-lg-9">
-          <!-- blog entry -->
+        <div class="col-lg-9" role="main">
           <div class="container">
-            <div class="col-sm-6 separator">
+            <!-- blog entry -->
+            <article class="col-sm-6 separator">
               <div class="thumbnail thumb-hover">
                 <img src="http://placehold.it/700x440" alt="">
-                <div class="caption">
+                <header class="caption">
                   <h3>
                     <a href="">Torvalds fue requerido por la NSA para instalar un backdoor en Linux</a>
                   </h3>
                   <p>cat1 > cat2</p>
-                </div>
+                </header>
                 <footer>
                   <div class="text-center">
                     <!-- Botón que informa de la fecha -->
@@ -105,42 +103,8 @@
                   </div>
                 </footer>
               </div>
-            </div>
-            <div class="col-sm-6 separator">
-              <div class="thumbnail thumb-hover">
-                <img src="http://placehold.it/700x440" alt="">
-                <div class="caption">
-                  <h3>
-                    <a href="">Torvalds fue requerido por la NSA para instalar un backdoor en Linux</a>
-                  </h3>
-                  <p>cat1 > cat2</p>
-                </div>
-                <footer>
-                  <div class="text-center">
-                    <!-- Botón que informa de la fecha -->
-                    <button type="button" class="btn btn-sm btn-default">
-                      <i class="glyphicon glyphicon-calendar"></i>
-                      <time class="updated" datetime="">14/01/2013</time>
-                    </button>
-                    <!-- Comentarios y compartir -->
-                    <div class="btn-group">
-                      <a class="btn btn-sm btn-default" href="">
-                        <i class="glyphicon glyphicon-comment"></i>
-                      </a>
-                      <a class="btn btn-sm btn-default" href="#response">125</a>
-                      <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-retweet"></i>Compartir</button>
-                      <div class="dropdown-menu dropdown-padded pull-right">
-                        <a class="btn-tt" href="" target="_blank" title="Compártelo en Twitter">Twitter</a>
-                        <a class="btn-fb" href="" target="_blank" title="Recomiéndalo en Facebook">Facebook</a>
-                        <a class="btn-gp" href="" target="_blank" title="Compártelo en Google Plus">G Plus</a>
-                        <a class="btn-lin" href="" target="_blank" title="Divulga el artículo en LinkedIn">LinkedIn</a>
-                      </div>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
+            </article>
+            <!--Repeat and repeat... NO HTML5-->
             <div class="col-sm-6 separator">
               <div class="thumbnail thumb-hover">
                 <img src="http://placehold.it/700x440" alt="">
@@ -266,9 +230,9 @@
         <aside id="sidebar" class="col-lg-3" role="complementary">
           <section class="widget" id="pages">
             <div class="container">
-              <div class="widget-title">
+              <header class="widget-title">
                 <h3>Acerca de:</h3>
-              </div>
+              </header>
               <div class="widget-content">
                 <ul>
                   <li>
@@ -296,16 +260,14 @@
         <hr>
       </div>
       <!-- /.container -->
-    </div>
-    <div class="container">
-      <footer>
+    </section>
+    <footer class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <p>UnivUnix - 2013</p>
           </div>
         </div>
-      </footer>
-    </div>
+    </footer>
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
