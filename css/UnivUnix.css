@@ -2,6 +2,9 @@ body {
   margin-top: 100px;
   background: url(../img/pw_maze_white.png);
 }
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: lato;*/
+}
 .content {
   max-width: 960px;
 }
@@ -102,6 +105,9 @@ body {
 }
 footer {
   /*margin: 50px 0;*/
+}
+.page-footer{
+  
 }
 @media (max-width:320px) {
   .container .row .col-lg-9, .container .row .col-sm-6 {
