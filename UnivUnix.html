@@ -41,7 +41,7 @@
           </ul>
           <ul class="nav navbar-nav pull-right">
             <li>
-              <a class="follow" data-toggle="modal" href="#social"><img src="img/share.png" alt=""></a>
+              <a class="follow" data-toggle="modal" href="#social"></a>
             </li>
           </ul>
         </div>
@@ -61,6 +61,7 @@
             <div class="social-link"><span class="ifacebook"><img src="img/facebook.png"></span><a href="#" class="afacebook">Síguenos en Facebook</a></div>
             <div class="social-link"><span class="itwitter"><img src="img/twitter.png"></span><a href="#" class="atwitter">Síguenos en Twitter</a></div>
             <div class="social-link"><span class="igoogleplus"><img src="img/googleplus.png"></span><a href="#" class="agoogleplus">Síguenos en Google+</a></div>
+            <div class="social-link"><span class="irss"><img src="img/rss.png"></span><a href="#" class="arss">Síguenos vía RSS</a></div>
         </div>
           </div>
           <div class="modal-footer">
@@ -78,7 +79,7 @@
             <!-- blog entry -->
             <article class="col-sm-6 separator">
               <div class="thumbnail thumb-hover">
-                <img src="http://placehold.it/700x440" alt="">
+                <img src="http://placehold.it/700x440/ffffff" alt="">
                 <header class="caption">
                   <h3>
                     <a href="">Torvalds fue requerido por la NSA para instalar un backdoor en Linux</a>
@@ -309,18 +310,29 @@
       </div>
       <!-- /.container -->
     </section>
-    <footer class="container">
+    <footer id="web-footer">
+    <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <p>UnivUnix - 2013</p>
+            <p class="pull-left">
+          		<a target="_blank" href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.univunix.com%2F"><i class="html5-icon"></i>HTML5</a>
+          		<a class="navbar-link" target="_blank" href="http://jigsaw.w3.org/css-validator/validator?uri=www.univunix.com"><i class="css3-icon"></i>CSS3</a>
+        	</p>
+        	<p class="pull-right">
+          		<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES"><i class="cc-icon"></i> BY-NC-SA</a>
+          	</p>
           </div>
         </div>
+    </div>
     </footer>
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+function positionFooter() { var mFoo = $("#web-footer"); if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") || ($(document.body).height() < $(window).height() && mFoo.css("position") != "fixed")) { mFoo.css({ position: "fixed", bottom: "0px" }); } else { mFoo.css({ position: "static" }); } } $(document).ready(function () { positionFooter(); $(window).scroll(positionFooter); $(window).resize(positionFooter); $(window).load(positionFooter); });
+	</script>
   </body>
 
 </html>
