@@ -104,6 +104,54 @@ a:hover {
   background-image: url(../img/share-dark.png);
   background-repeat: no-repeat;
 }
+.btn-tt{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/icon-twitter.png);
+  background-repeat: no-repeat;
+}
+.btn-fb{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/icon-facebook.png);
+  background-repeat: no-repeat;
+}
+.btn-gp{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/icon-googleplus.png);
+  background-repeat: no-repeat;
+}
+.btn-lin{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(../img/icon-linkedin.png);
+  background-repeat: no-repeat;
+}
+.btn-tt:hover{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url(../img/icon-twitter-color.png);
+  background-repeat: no-repeat;
+}
+.btn-fb:hover{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url(../img/icon-facebook-color.png);
+  background-repeat: no-repeat;
+}
+.btn-gp:hover{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url(../img/icon-googleplus-color.png);
+  background-repeat: no-repeat;
+}
+.btn-lin:hover{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url(../img/icon-linkedin-color.png);
+  background-repeat: no-repeat;
+}
 /*Posts*/
 .separator {
   margin-bottom: 30px;
