@@ -26,8 +26,8 @@
 /*Basics*/
  body {
   margin-top: 85px;
-  /*background: url(../img/pw_maze_white.png);*/
   background: url(../img/pw_maze_white.png);
+  /*background: url(../img/cream_pixels.png);*/
 }
 h1, h2, h3, h4, h5, h6 {
   font-family:'Lato', arial, sans-serif;
@@ -94,6 +94,7 @@ a:hover {
 .follow{
   margin-top: 10px !important;
   margin-bottom: 10px !important;
+  margin-right: 10px;
   width: 26px;
   height: 30px;
   background-image: url(../img/share.png);
@@ -206,6 +207,37 @@ a:hover {
   -o-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
+}
+.post{
+  background-color: #ffffff;
+  box-shadow: rgba(128, 128, 128, 0.74) 0 2px 4px;
+  margin-bottom: 30px;
+}
+.post-header{
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 20px;
+}
+.post-header a{
+  color: #333333;
+}
+.post-content{
+  padding: 20px; 
+}
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6{
+  padding: 5px 0px 5px 0px;
+  margin: 0px 0px 10px 0px;
+  border-bottom: 1px solid #d2d2d2;
+}
+.post .tag-list{
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  margin: 30px 0px 15px 0px;
+  padding: 15px 5px 15px 5px;
+}
+.post .taglist a{
+  text-decoration: none;
+  color: #ffffff;
 }
 /*Sidebar*/
 #sidebar .widget .widget-title {
