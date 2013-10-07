@@ -5,6 +5,7 @@
   font-weight: 400;
   src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 }
+/*
 @font-face {
   font-family:'Lato';
   font-style: normal;
@@ -23,17 +24,21 @@
   font-weight: 700;
   src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/HkF_qI1x_noxlxhrhMQYED8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+*/
 /*Basics*/
- body {
+body {
   margin-top: 85px;
   background: url(../img/pw_maze_white.png);
-  /*background: url(../img/cream_pixels.png);*/
 }
 h1, h2, h3, h4, h5, h6 {
   font-family:'Lato', arial, sans-serif;
 }
+a{
+  color: #428bca;
+}
 a:hover {
   text-decoration:none;
+  color: #333333;
 }
 /*Navbar*/
 .navbar-custom {
@@ -91,75 +96,11 @@ a:hover {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.follow{
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-  margin-right: 10px;
-  width: 26px;
-  height: 30px;
-  background-image: url(../img/share.png);
-  background-repeat: no-repeat;
-}
-.follow:hover{
-  transition: background-image 0.2s ease-in-out;
-  background-image: url(../img/share-dark.png);
-  background-repeat: no-repeat;
-}
-.btn-tt{
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-image: url(../img/icon-twitter.png);
-  background-repeat: no-repeat;
-}
-.btn-fb{
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-image: url(../img/icon-facebook.png);
-  background-repeat: no-repeat;
-}
-.btn-gp{
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-image: url(../img/icon-googleplus.png);
-  background-repeat: no-repeat;
-}
-.btn-lin{
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-image: url(../img/icon-linkedin.png);
-  background-repeat: no-repeat;
-}
-.btn-tt:hover{
-  transition: background-image 0.2s ease-in-out;
-  background-image: url(../img/icon-twitter-color.png);
-  background-repeat: no-repeat;
-}
-.btn-fb:hover{
-  transition: background-image 0.2s ease-in-out;
-  background-image: url(../img/icon-facebook-color.png);
-  background-repeat: no-repeat;
-}
-.btn-gp:hover{
-  transition: background-image 0.2s ease-in-out;
-  background-image: url(../img/icon-googleplus-color.png);
-  background-repeat: no-repeat;
-}
-.btn-lin:hover{
-  transition: background-image 0.2s ease-in-out;
-  background-image: url(../img/icon-linkedin-color.png);
-  background-repeat: no-repeat;
-}
 /*Posts*/
 .separator {
   margin-bottom: 30px;
 }
-.btn {
-  margin-bottom: 5px;
-}
+/* Adds a margin to the buttons */
 .thumbnail {
   position:relative;
   overflow:visible;
@@ -172,22 +113,7 @@ a:hover {
 .thumbnail img {
   z-index: -1;
 }
-.thumbnail footer {
-  padding: 10px;
-}
-.thumbnail h3 {
-  margin: 0;
-  padding-bottom: 0.5em;
-  font-size: 1.4em;
-  /*font-weight: bold;*/
-  border-bottom: 1px dotted #a4a4a4;
-}
-.thumbnail p {
-  margin: 0px;
-  padding: 4px 0px 0px 0px;
-  font-size: 0.8em;
-}
-.caption {
+.thumbnail .caption {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,10 +123,21 @@ a:hover {
   /*border-radius: 4px 4px 0px 0px;*/
   /*z-index: 9000;*/
 }
-.caption a {
+.thumbnail .caption a {
   color:#FFFFFF !important;
 }
-.caption:hover{
+.thumbnail h3 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font-size: 1.4em;
+  border-bottom: 1px dotted #a4a4a4;
+}
+.thumbnail p {
+  margin: 0px;
+  padding: 4px 0px 0px 0px;
+  font-size: 0.8em;
+}
+.thumbnail .caption:hover{
   background: rgba(0, 0, 0, 0.4);
   -webkit-transition: background-color 200ms linear;
   -moz-transition: background-color 200ms linear;
@@ -208,20 +145,26 @@ a:hover {
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
+.thumbnail footer {
+  padding: 10px;
+}
+.thumbnail footer .btn {
+  margin-bottom: 5px;
+}
 .post{
   background-color: #ffffff;
   box-shadow: rgba(128, 128, 128, 0.74) 0 2px 4px;
   margin-bottom: 30px;
 }
-.post-header{
+.post .post-header{
   background-color: #f1f1f1;
   border-bottom: 1px solid #d2d2d2;
   padding: 20px;
 }
-.post-header a{
+.post .post-header a{
   color: #333333;
 }
-.post-content{
+.post .post-content{
   padding: 20px; 
 }
 .post h1, .post h2, .post h3, .post h4, .post h5, .post h6{
@@ -252,7 +195,7 @@ a:hover {
   -webkit-border-top-right-radius: 6px;
   -webkit-border-top-left-radius: 6px;
 }
-.widget-title h3 {
+#sidebar .widget .widget-title h3 {
   color: #ffffff;
   text-shadow: 0px 1px 0px #FFFFFF;
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
@@ -358,32 +301,35 @@ a:hover {
 #web-footer a:hover{
   color: #3198b6;
 }
-.html5-icon {
-background: url(../img/univ-cats.png) no-repeat 0 -329px;
-width: 27px;
-height: 27px;
-display: block;
-display: inline-block;
-vertical-align: middle;
+/* CSS SPRITE */
+.sprite {
+    background: url(../img/sprites.png) no-repeat top left;
 }
-.css3-icon {
-background: url(../img/univ-cats.png) no-repeat 0 -188px;
-width: 27px;
-height: 27px;
-display: block;
-display: inline-block;
-vertical-align: middle;
-}
-.cc-icon {
-background: url(../img/univ-cats.png) no-repeat 0 -800px;
-width: 27px;
-height: 27px;
-display: block;
-display: inline-block;
-vertical-align: middle;
-}
+.sprite-LogoUnivUnix{ margin-top:5px; margin-bottom:5px; background-position: 0 0; width: 156px; height: 40px; } 
+.sprite-cc{ background-position: 0 -70px; width: 30px; height: 30px; display:inline-block; vertical-align: middle; margin-right: 3px;} 
+.sprite-css3{ background-position: 0 -130px; width: 33px; height: 30px; display:inline-block; vertical-align: middle; margin-left: 5px; margin-right: 3px;} 
+.sprite-html5{ background-position: 0 -287px; width: 21px; height: 30px; display:inline-block; vertical-align: middle; margin-right: 3px;}
 
+.sprite-share{ background-position: 0 -934px; width: 30px; height: 30px; 
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-right: 10px;
+} 
+.sprite-share:hover{ background-position: 0 -874px; width: 30px; height: 30px; } 
 
+.sprite-facebook{ background-position: 0 -190px; width: 10px; height: 20px; display:inline-block; vertical-align: middle;} 
+.sprite-googleplus{ background-position: 0 -240px; width: 18px; height: 17px; display:inline-block; vertical-align: middle;} 
+.sprite-rss{ background-position: 0 -827px; width: 17px; height: 17px; display:inline-block; vertical-align: middle;} 
+.sprite-twitter{ background-position: 0 -994px; width: 20px; height: 17px; display:inline-block; vertical-align: middle;} 
+
+.sprite-icon-facebook{ background-position: 0 -407px; width: 30px; height: 30px; display: inline-block;} 
+.sprite-icon-facebook:hover{ background-position: 0 -347px; width: 30px; height: 30px; } 
+.sprite-icon-googleplus{ background-position: 0 -527px; width: 30px; height: 30px; display: inline-block;} 
+.sprite-icon-googleplus:hover{ background-position: 0 -467px; width: 30px; height: 30px; } 
+.sprite-icon-linkedin{ background-position: 0 -647px; width: 30px; height: 30px; display: inline-block;} 
+.sprite-icon-linkedin:hover{ background-position: 0 -587px; width: 30px; height: 30px; } 
+.sprite-icon-twitter{ background-position: 0 -767px; width: 30px; height: 30px; display: inline-block;} 
+.sprite-icon-twitter:hover{ background-position: 0 -707px; width: 30px; height: 30px; } 
 
 /*Media query*/
 @media (max-width:320px) {
@@ -403,4 +349,8 @@ vertical-align: middle;
   .caption:hover {
     background: none;
   }  
+
+}
+@media (max-width:760px) {
+  .sprite-LogoUnivUnix{ margin-left:5px;} 
 }
